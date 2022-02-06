@@ -1,0 +1,758 @@
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taxi In Rent</title>
+
+    <!-- logo -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- ------------------bootstrap---------------------------- -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- -------------------date-time picker------------------------ -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/jquery/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/datetime/mdtimepicker.min.css">
+  
+
+    <!-- ---------------------google font------------------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- ---------------------style sheet--------------------- -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/cab-list.css">
+    <link rel="stylesheet" type="text/css" href="css/cab-list-res.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/check-out.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+   
+
+    <!-- ------------------------aos------------------------ -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- --------------------animate css--------------------- -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- -----------------------font awsome icon---------------------- -->
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- ------------------owl carousel------------------------ -->
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="owl.carousel/assets/owl.theme.default.min.css">
+
+    <!--- Vendor CSS Files -->
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    
+    
+
+</head>
+<body>
+
+    <!-- ------------header-------------------- -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item nav_1">
+                        <a class="nav-link" href="#">Holiday Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="check-out.html">Attach Taxi</a>
+                    </li>
+                </ul>
+                <div class="form-inline nav-sign">
+                    <p><img src="img/phone.png">9999998888</p>
+                    <a href="#" class="btn" data-toggle="modal" data-target="#myModal" type="submit">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ------------------------modal-page------------------ -->
+        <section id="modal-page">
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body sign-body">
+                            <div class="sign-img">
+                                <img src="img/taxi.png">
+                            </div>
+                            <h2>Lucknow - Delhi</h2>
+                            <div class="sign-in">
+                                <label>Please Enter Your mobile number to proceed</label><br>
+                                <input type="text" placeholder="Number" name="">
+                            </div>
+                            <div class="sign-sub">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -----------------------OTP-modal-page------------------ -->
+        <section id="modal-page">
+            <div class="modal fade" id="myModal2" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body sign-body">
+                            <div class="sign-img">
+                                <img src="img/taxi.png">
+                            </div>
+                            <h2>OTP</h2>
+                            <div class="sign-in">
+                                <label>Please Enter The Onetime Password Send to + 91 <span>8888 5555 77</span></label><br>
+                                <input type="text" placeholder="Number" name="">
+                            </div>
+                            <div class="sign-sub">
+                                <a href="#">Resend OTP</a><br><br>
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <main>
+        <!-- -----------------------first section hero---------------------- -->
+        <section id="first">
+            <div class="container-fluid hero">
+                <h1 class="animate__animated animate__bounceInLeft animate__slow">Call at any time : <span>9999998888</span></h1>
+                <h2>100% Sanitized | Safe | Reliable Cab</h2>
+
+                <!-- ----------------round trip development----------------- -->
+                <div class="trip-box">
+                    <div class="trip trip-one" data-aos="fade-down-left" data-aos-duration="2000">
+                        <img src="img/car1.png">
+                    </div>
+                    <div class="trip trip-form">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'One')" id="defaultOpen">One Way Trip</button>
+                            <button class="tablinks" onclick="openCity(event, 'Two')">Round Trip</button>
+                        </div>
+                        <div id="One" class="tabcontent">
+                            <form action="cab-list.html">
+                                <div class="input-container">
+                                    <i class="fa fa-map-marker"></i>
+                                    <input class="input-field" type="text" placeholder="Pick-up from" name="">
+                                </div>
+                                <div class="input-container ">
+                                    <i class="fa fa-map-marker" style="color: #8c8c8c"></i>
+                                    <input class="input-field" type="text" placeholder="To" name="">
+                                </div>
+                                <div class="date_time">
+                                    <div class="input-container date" data-provide="date">
+                                        <i class="fa fa-calendar" style="color: #8c8c8c"></i>
+                                        <input class="input-field" type="text" autocomplete="off" placeholder="Choose Date" id="date">
+                                    </div>
+                                    <div class="input-container time">
+                                        <i class="fa fa-clock-o" style="color: #8c8c8c"></i>
+                                        <input class="input-field" type="text" placeholder="Choose Time" id="time">
+                                    </div>
+                                </div>
+                                <div class="submit">
+                                    <input class="input-field" type="submit" value="Search Taxi">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="Two" class="tabcontent">
+                            <form action="cab-list.html">
+                                <div class="input-container">
+                                    <i class="fa fa-map-marker"></i>
+                                    <input class="input-field" type="text" placeholder="Pick-up from" name="">
+                                </div>
+                                <div class="input_fields_wrap">
+                                    <div class="input-container ">
+                                        <i class="fa fa-map-marker" style="color: #8c8c8c"></i>
+                                        <input class="input-field" type="text" placeholder="To" name="">
+                                    </div>
+                                    <button class="add_field_button"><i class="fa fa-plus"></i></button>
+                                </div>
+                                <div class="date_time">
+                                   <div class="input-container date" data-provide="date">
+                                        <i class="fa fa-calendar" style="color: #8c8c8c"></i>
+                                        <input class="input-field" type="text" autocomplete="off" placeholder="Choose Date" id="date2">
+                                    </div>
+                                   <div class="input-container time">
+                                        <i class="fa fa-clock-o" style="color: #8c8c8c"></i>
+                                        <input class="input-field" type="text" placeholder="Choose Time" id="time2">
+                                    </div>
+                                </div>
+                                <div class="submit">
+                                    <input class="input-field" type="submit" value="Search Taxi">
+                                </div>
+                            </form> 
+                        </div>
+
+                    </div>
+                    <div class="trip trip-two" data-aos="fade-down-right" data-aos-duration="2000">
+                        <img src="img/car2.png">
+                    </div>
+                </div>
+
+                <!-- --------------------offers ------------------- -->
+                <div class="offer-box">
+                    <h1>New Offers</h1>
+                    <div class="owl-box owl-carousel owl-theme offer-carousel">
+                        <div class="item">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="img/1.png">
+                                </div>
+                                <div class="item-text">
+                                    <h2>Grab Your</h2>
+                                    <P>Discount on Online Booking</P>
+                                    <h2>UPTO 50% OFF</h2>
+                                    <h3>Use Code : oneway10</h3>
+                                </div>
+                            </div>
+                            <p>Discount on one way trip in all cities</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="img/2.png">
+                                </div>
+                                <div class="item-text">
+                                    <h2>Grab Your</h2>
+                                    <P>Discount on Our Station Tour</P>
+                                    <h2>FLAT 5% OFF</h2>
+                                    <h3>Use Code : OUTT5</h3>
+                                </div>
+                            </div>
+                            <p>Discount on one way trip in all cities</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="img/3.png">
+                                </div>
+                                <div class="item-text">
+                                    <h2>Airport & Stationt Transfer</h2>
+                                    
+                                    <h3>Starts @ ₹350</h3>
+                                </div>
+                            </div>
+                            <p>Discount on one way trip in all cities</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="img/1.png">
+                                </div>
+                                <div class="item-text">
+                                    <h2>Grab Your</h2>
+                                    <P>Discount on Online Booking</P>
+                                    <h2>UPTO 50% OFF</h2>
+                                    <h3>Use Code : oneway10</h3>
+                                </div>
+                            </div>
+                            <p>Discount on one way trip in all cities</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="img/2.png">
+                                </div>
+                                <div class="item-text">
+                                    <h2>Grab Your</h2>
+                                    <P>Discount on Online Booking</P>
+                                    <h2>UPTO 50% OFF</h2>
+                                    <h3>Use Code : oneway10</h3>
+                                </div>
+                            </div>
+                            <p>Discount on one way trip in all cities</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="img/3.png">
+                                </div>
+                                <div class="item-text">
+                                    <h2>Grab Your</h2>
+                                    <P>Discount on Online Booking</P>
+                                    <h2>UPTO 50% OFF</h2>
+                                    <h3>Use Code : oneway10</h3>
+                                </div>
+                            </div>
+                            <p>Discount on one way trip in all cities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------------second section- about--------------- -->
+        <section id="second">
+            <div class="container-fluid about-section">
+                <h1>About Texi In Rent</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="about-btn" data-aos="zoom-in" data-aos-duration="2000">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- -----------------section three- services---------------------- -->
+        <section id="three">
+            <div class="conrainer-fluid services">
+                <div class="owl-carousel owl-theme services-carousel">
+                        <div class="service">
+                            <h2>Trained <br>Chauffeur</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="service">
+                            <h2>24 X 7 Customer <br>Support</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="service">
+                            <h2>Low Cost <br>Services</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="service">
+                            <h2>On Time <br>Services</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------------section four-- testimonial----------------- -->
+        <section id="four">
+            <div class="container-fluid testimonial">
+                <h1>Why People Love</h1>
+                <div class="four">
+                    <div class="owl-box owl-carousel owl-theme testimonial-carousel">
+                        <div class="testi">
+                            <i class="fa fa-quote-left"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. </p>
+                            <h3>Preeti Dass, Agra</h3>
+                        </div>
+                        <div class="testi">
+                            <i class="fa fa-quote-left"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. </p>
+                            <h3>Preeti Dass, Agra</h3>
+                        </div>
+                        <div class="testi">
+                            <i class="fa fa-quote-left"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. </p>
+                            <h3>Preeti Dass, Agra</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------section-five book taxi------------------- -->
+        <section id="five">
+            <div class="container-fluid book-taxi">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="taxi">
+                            <h1>Book An Taxi <br>From The TaxiInRent App</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <div class="playstore" data-aos="fade-right" data-aos-duration="2000">
+                                <img src="img/googleplay.png">
+                                <img src="img/appstore.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="taxi-mob">
+                            <img data-aos="fade-left" data-aos-duration="2000" src="img/mobile.png">
+                            <img class="img-mob" src="img/mobile2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>    
+
+        <!-- ----------------------------section six-popular-------------------------------- -->
+        <section id="six">
+            <div class="container-fluid popular">
+                <h1>Popular Routes</h1>
+                <div class="popular-box">
+                    <div class="pop-box">
+                        <ul>
+                            <li><a href="#">Lucknow to Agra Taxi</a></li>
+                            <li><a href="#">Lucknow to Manali Taxi</a></li>
+                            <li><a href="#">Lucknow to Gurgaon Taxi</a></li>
+                            <li><a href="#">Lucknow to Udaipur Taxi</a></li>
+                            <li><a href="#">Lucknow to Amritsar Taxi</a></li>
+                            <li><a href="#">Lucknow to Faizabad Taxi</a></li>
+                            <li><a href="#">Lucknow to Ayodhya Taxi</a></li>
+                            <li><a href="#">Lucknow to Sultanpur Taxi</a></li>
+                            <li><a href="#">Lucknow to Prayagraj Taxi</a></li>
+                        </ul>
+                    </div>
+                    <div class="pop-box">
+                        <ul>
+                            <li><a href="#">Lucknow to Agra Taxi</a></li>
+                            <li><a href="#">Lucknow to Manali Taxi</a></li>
+                            <li><a href="#">Lucknow to Gurgaon Taxi</a></li>
+                            <li><a href="#">Lucknow to Udaipur Taxi</a></li>
+                            <li><a href="#">Lucknow to Amritsar Taxi</a></li>
+                            <li><a href="#">Lucknow to Faizabad Taxi</a></li>
+                            <li><a href="#">Lucknow to Ayodhya Taxi</a></li>
+                            <li><a href="#">Lucknow to Sultanpur Taxi</a></li>
+                            <li><a href="#">Lucknow to Prayagraj Taxi</a></li>
+                        </ul>
+                    </div>
+                    <div class="pop-box">
+                        <ul>
+                            <li><a href="#">Lucknow to Agra Taxi</a></li>
+                            <li><a href="#">Lucknow to Manali Taxi</a></li>
+                            <li><a href="#">Lucknow to Gurgaon Taxi</a></li>
+                            <li><a href="#">Lucknow to Udaipur Taxi</a></li>
+                            <li><a href="#">Lucknow to Amritsar Taxi</a></li>
+                            <li><a href="#">Lucknow to Faizabad Taxi</a></li>
+                            <li><a href="#">Lucknow to Ayodhya Taxi</a></li>
+                            <li><a href="#">Lucknow to Sultanpur Taxi</a></li>
+                            <li><a href="#">Lucknow to Prayagraj Taxi</a></li>
+                        </ul>
+                    </div>
+                    <div class="pop-box">
+                        <ul>
+                            <li><a href="#">Lucknow to Agra Taxi</a></li>
+                            <li><a href="#">Lucknow to Manali Taxi</a></li>
+                            <li><a href="#">Lucknow to Gurgaon Taxi</a></li>
+                            <li><a href="#">Lucknow to Udaipur Taxi</a></li>
+                            <li><a href="#">Lucknow to Amritsar Taxi</a></li>
+                            <li><a href="#">Lucknow to Faizabad Taxi</a></li>
+                            <li><a href="#">Lucknow to Ayodhya Taxi</a></li>
+                            <li><a href="#">Lucknow to Sultanpur Taxi</a></li>
+                            <li><a href="#">Lucknow to Prayagraj Taxi</a></li>
+                        </ul>
+                    </div>
+                    <div class="pop-box">
+                        <ul>
+                            <li><a href="#">Lucknow to Agra Taxi</a></li>
+                            <li><a href="#">Lucknow to Manali Taxi</a></li>
+                            <li><a href="#">Lucknow to Gurgaon Taxi</a></li>
+                            <li><a href="#">Lucknow to Udaipur Taxi</a></li>
+                            <li><a href="#">Lucknow to Amritsar Taxi</a></li>
+                            <li><a href="#">Lucknow to Faizabad Taxi</a></li>
+                            <li><a href="#">Lucknow to Ayodhya Taxi</a></li>
+                            <li><a href="#">Lucknow to Sultanpur Taxi</a></li>
+                            <li><a href="#">Lucknow to Prayagraj Taxi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --------------------------footer section----------------------- -->
+     <footer> 
+            <div class="container-fluid footer">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3 small-50">
+                        <div class="foot-box">
+                            <h2>Product</h2>
+                            <ul>
+                                <li><a href="#">Drivers</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Safety</a></li>
+                                <li><a href="#">Cities and Rates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 small-50">
+                        <div class="foot-box">
+                            <h2>About us</h2>
+                            <ul>
+                                <li><a href="#">Who we are</a></li>
+                                <li><a href="#">Join the team</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Sustainbility</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 small-50">
+                        <div class="foot-box">
+                            <h2>Resources</h2>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Conditions</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Quality Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 small-50">
+                        <div class="foot-box">
+                            <h2>Extra Links</h2>
+                            <ul>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Patners</a></li>
+                                <li><a href="#">Social media</a></li>
+                            </ul>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="copy">
+                <p>Copyright &copy; 2022 <a href="#">Anand </a> All rights reserved</p>
+            </section>
+        </footer>
+        
+
+
+    <!-- ------------------main js------------------- -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+   <!--  <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script> -->
+
+    <!-- -------------------------date time-picker-------------- -->
+    <script src="assets/vendor/jquery/jquery-ui.min.js"></script>
+    <script src="assets/vendor/datetime/mdtimepicker.min.js"></script>
+
+    <!-- ------------------aos--------------------- -->
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- ------------------------owl carousel------------------- -->
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- ---------------------input add remove------------------------- -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var max_fields = 10; 
+            var wrapper = $(".input_fields_wrap"); 
+            var add_button = $(".add_field_button"); 
+            
+            var x = 1;
+            $(add_button).click(function(e){ 
+                e.preventDefault();
+                if(x < max_fields){ 
+                    x++; 
+                    $(wrapper).append('<div class="input-container"><i class="fa fa-map-marker" style="color: #4d4d4d"></i><input class="input-field p-field" type="text" placeholder="To" name=""><a href="#" class="remove_field"><i class="fa fa-minus"></i></a></div>');
+                }
+            });
+
+            $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+                e.preventDefault(); $(this).parent('div').remove(); x--;
+            })
+            
+        });
+    </script>
+
+    <!-- ----------------------owl carousel------------- -->
+    <script>
+        $('.offer-carousel').owlCarousel({
+        loop:true,
+        nav:true,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            900:{
+                items:2
+            },
+            1200:{
+                items:3
+            }
+        }
+    })
+    </script>
+
+    <script>
+        $('.services-carousel').owlCarousel({
+        loop:true,
+        nav:true,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            900:{
+                items:2
+            },
+            1200:{
+                items:4,
+                loop:false
+            }
+        }
+    })
+    </script>
+
+    <script>
+        $('.testimonial-carousel').owlCarousel({
+        loop:true,
+        nav:true,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            900:{
+                items:2
+            },
+            1200:{
+                items:3
+            }
+        }
+    })
+    </script>
+
+    <script>
+        $('.tab-carousel').owlCarousel({
+        loop:true,
+        nav:true,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:3
+            },
+            700:{
+                items:5
+            },
+            1100:{
+                items:7
+            }
+        }
+    })
+    </script>
+
+    <!-- ----------------date picker------------------- -->
+    <script >
+        $ (document).ready( function() {
+           $('#date').datepicker({
+            dateFormat: "dd-mm-yy",
+            changeMonth: true,
+            changeYear: true
+           });
+        });
+    </script>
+
+     <script >
+        $ (document).ready( function() {
+           $('#date2').datepicker({
+            dateFormat: "dd-mm-yy",
+            changeMonth: true,
+            changeYear: true
+           });
+        });
+    </script>
+
+    <script >
+        $ (document).ready( function() {
+           $('#date3').datepicker({
+            dateFormat: "dd-mm-yy",
+            changeMonth: true,
+            changeYear: true
+           });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#time').mdtimepicker();    
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#time2').mdtimepicker();    
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#time3').mdtimepicker();    
+        });
+    </script>
+
+    <!-- ------------------radio button------------------ -->
+    <script>
+        function myFunction() {
+          var checkBox = document.getElementById("myCheck");
+          var text = document.getElementById("text");
+          if (checkBox.checked == true){
+            text.style.display = "block";
+          } else {
+             text.style.display = "none";
+          }
+        }
+    </script>
+
+    <!-- ----------------------tool tip-------------- -->
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
+
+
+
+</body>
+</html>
+    
+
+
+
+   

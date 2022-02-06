@@ -1,0 +1,316 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*----------modify search-----------*/
+
+#modify{
+	background-color: #ffbe00;
+	padding: 15px 0;
+}
+
+.modify{
+	text-align: center;
+	padding-top: 8px;
+}
+
+.modify h3{
+	font-size: 16px;
+	color: #000;
+	text-transform: uppercase;
+	padding: 0;
+	margin-top: 5px;
+	letter-spacing: 1px;
+}
+
+.modify a{
+	font-size: 16px;
+	background-color: #000;
+	color: #ffbe00;
+	padding: 10px 20px;
+}
+
+/*--------------packages-----------------*/
+#packages{
+	padding: 1.5rem 5% 4rem 5%;
+}
+
+#packages h1{
+	color: #000;
+}
+
+#packages h3{
+	font-size: 24px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 1rem;
+}
+
+.packages{
+	border: 1px solid #cccccc;
+	margin-top: 20px;
+	padding: 0;
+	border-radius: 5px;
+}
+
+.packages .car{
+	display: flex;
+	flex-direction: row;
+}
+
+.packages .book-nows{
+	display: flex;
+	flex-direction: row;
+}
+
+.car .package,
+.book-nows .package{
+	width: 100%;
+}
+
+.package{
+	padding: 20px 0;
+	margin: 0;
+}
+
+.package-img{
+	text-align: center;
+}
+
+.package img{
+	height: 12vh;
+	text-align: center;
+}
+
+.package h4{
+	font-size: 18px;
+	color: #000;
+	margin: 0;
+	font-weight: 500;
+}
+
+.package .rating{
+	margin: 0;
+}
+
+.package .rating i{
+	color: #fedfa6;
+	font-size: 15px;
+}
+
+.package .rating .checked{
+	color: #fcaf21;
+}
+
+.package h5{
+	font-size: 14px;
+	color: #888888;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+
+.package p{
+	font-size: 11px;
+	color: #4d4d4d;
+}
+
+.package .f{
+	margin-top: 5px;
+	font-size: 11px;
+}
+
+.package .ff{
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
+.faci{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+}
+
+.faci-box{
+	margin-top: 5px;
+	text-align: center;
+}
+
+.faci-box img{
+	width: 32px;
+	height: 32px;
+}
+
+.package.p-pack{
+	text-align: center;
+}
+
+.p-pack .p-p{
+	margin: -5px 0 3px 0;
+}
+
+.package h4 .fa-question-circle-o{
+	color: #8c8c8c;
+	margin-left: 5px;
+	font-weight: 200;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.package .p-btn{
+	margin: 8px 0 12px 0;
+}
+
+.package .p-btn a{
+	font-size: 16px;
+	color: #000;
+	padding: 5px 15px;
+	border:  1.5px solid #000;
+}
+
+.p-pack:hover{
+	background-color: #fff3c9;
+}
+
+.p-pack:hover ~ .d-pack{
+	background-color: #fff!important;
+}
+
+.d-pack{
+	background-color: #fff3c9;
+}
+
+.d-pack a{
+	background-color: #000;
+	color: #ffbe00!important;
+}
+
+
+/*-------------------------modal-page------------------*/
+.modal-body{
+	padding: 2rem 2rem 0rem 2rem;
+}
+
+.modal-body h2{
+	font-size: 26px;
+	color: #000;
+	font-weight: 500;
+}
+
+.details{
+	margin-top: 15px;
+	background-color: #ffbe00;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.d-detail{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 7px;
+}
+
+.d-detail p{
+	color: #000;
+	font-size: 14px;
+	margin: 0;
+}
+
+.d-detail a{
+	color: #000;
+	font-size: 14px;
+	margin: 0;
+	text-decoration: none;
+}
+
+.modal-body h3{
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+	margin-top: 15px;
+	padding: 0;
+}
+
+.d-detail p i{
+	font-size: 13px;
+}
+
+.modal-footer{
+	border: none;
+	padding: 1rem 2rem 1rem 2rem;
+}
+
+.modal-footer button{
+	font-size: 16px;
+	font-weight: 400;
+	color: #ffbe00;
+	padding: 10px 45px;
+	background-color: #000;
+	border-radius: 0;
+}
+
+.modal-footer button:hover{
+	color: #ffbe00;
+	background-color: #000;
+}
+
+.tooltip-inner{
+	padding: 5px;
+	margin-left: 5px;
+	background-color: #fff;
+	color: #000;
+	font-size: 10px;
+}
+
+.bs-tooltip-auto[x-placement^=right] .arrow, .bs-tooltip-right .arrow{
+	left: 5px;
+}
+
+.test + .tooltip.right > .tooltip-arrow {
+    border-right: 5px solid #fff!important;
+}
+
+
+@media (max-width: 768px){
+	.modal-body{
+		padding: 2rem 0.5rem 0rem 0.5rem;
+	}
+
+	.modal-footer{
+		padding: 0.6rem 0.2rem 0.6rem 0.5rem;
+	}
+
+	.modal-body h2{
+		font-size: 25px;
+	}
+
+	.details{
+		margin-top: 5px;
+		padding: 5px 7px;
+		border-radius: 4px;
+	}
+
+	.d-detail p{
+		font-size: 11px;
+	}
+
+	.d-detail a{
+		font-size: 11px;
+	}
+
+	.modal-body h3{
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+	.d-detail p i{
+		font-size: 10px;
+	}
+
+	.modal-footer button{
+		font-size: 14px;
+		padding: 5px 30px;
+	}
+
+}

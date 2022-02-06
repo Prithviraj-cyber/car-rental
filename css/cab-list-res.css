@@ -1,0 +1,144 @@
+@media (max-width: 991px){
+
+	.package{
+		padding: 10px;
+		height: auto;
+	}
+
+	.p-head{
+		display: flex;
+		flex-direction: row;
+		margin: 0 15px;
+		justify-content: center;
+	}
+
+	.p-head h1{
+		font-size: 19px!important;
+		margin-right: 10px;
+	}
+
+	.p-head h3{
+		margin-top: 0px!important;
+		font-size: 18px!important;
+		color: #000!important;
+	}
+
+	.package-img{
+		text-align: left;
+	}
+
+	.package-img img{
+		height: 20vh;
+		margin-top: 10px;
+	}
+
+	.package h4{
+		font-size: 20px;
+	}
+
+	.package .rating i{
+		font-size: 17px;
+		margin: 8px 0;
+	}
+
+	.package h5{
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+
+	.pack-faci{
+		margin: 15px 0;
+	}
+
+	.package p{
+		font-size: 10px;
+	}
+
+	.package .f{
+		margin-top: 6px;
+		font-size: 10px;
+	}
+
+	.faci{
+		justify-content: start;
+	}
+
+	.faci-box{
+		margin-top: 1px;
+		margin-right: 10px;
+	}
+
+	.package .ff{
+		margin-bottom: 10px;
+		font-size: 14px;
+		text-align: left;
+	}
+
+	.faci-box img{
+		width: 25px;
+		height: 25px!important;
+	}
+
+	.package .p-btn a{
+		font-size: 15px;
+		border:  1px solid #000;
+	}
+
+}
+
+
+@media (max-width: 768px){
+
+	.modify{
+		text-align: center;
+		padding-top: 0px;
+	}
+
+	.modify h3{
+		font-size: 14px;
+	}
+
+	.modify-a{
+		margin: 5px;
+	}
+
+	.modify a{
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+
+	.package{
+		padding: 8px;
+	}
+
+	#packages{
+		padding: 1.4rem 0rem 2rem 0rem;
+	}
+
+	.package-img{
+		width: 48%!important;
+	}
+
+	.package-img img{
+		height: 10vh;
+	}
+
+	.pack-faci{
+		margin: 5px 0;
+	}
+
+	#packages h3{
+		font-size: 18px;
+		margin-top: -5px;
+	}
+
+	.package .f{
+		font-size: 10px;
+	}
+
+	.package .ff{
+		font-size: 14px;
+	}
+
+
+}

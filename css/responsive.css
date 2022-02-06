@@ -1,0 +1,389 @@
+@media (max-width: 1200px){
+
+	/*---------trip form-------*/
+	.trip-one,.trip-two{
+		display: none;
+		opacity: 0;
+		overflow: hidden;
+	}
+
+	.trip-form{
+		width: 70%;
+	}
+
+	.book-taxi{
+		margin-bottom: -40px;
+	}
+
+}
+
+
+
+@media (max-width: 991px){
+
+	/*--------header--------*/
+	.navbar-brand img{
+		width: 80px;
+	}
+
+	.navbar .nav-link{
+		border-bottom: 1px solid #e6e6e6;
+		font-size: 16px;
+		text-align: right;
+		padding-right: 12px;
+	}
+
+	.active .nav-link{
+		border-top: 1px solid #e6e6e6;
+	}
+
+	.nav_1{
+		margin: 0px;
+	}
+
+	.form-inline{
+		padding: 5px 12px;
+		border-bottom: 1px solid #e6e6e6;
+		justify-content: flex-end;
+	}
+
+	.form-inline img{
+		width: 18px;
+		margin: 0 8px 0 0;
+	}
+
+	.form-inline p{
+		font-size: 15px;
+	}
+
+	.nav-sign a{
+		font-size: 15px;
+	}
+
+	.navbar-toggler:hover{
+		outline: none;
+	}
+
+	/*------------trip form----------*/
+	.hero h1{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.hero h2{
+		font-size: 23px;	
+		margin: 12px 0 0 0;
+	} 
+
+	.trip-form{
+		width: 100%;
+	}
+
+	/*----------------testimonial-------------*/
+	.testimonial{
+		padding: 7% 8%;
+	}
+
+	.testimonial h1{
+		margin-bottom: 1rem;
+	}
+
+	.testi{
+		margin: 20px 3px;
+		padding: 0px;
+	}
+
+	.testi i{
+		font-size: 25px;
+	}
+	
+	.testi p{
+    	font-size: 15px;
+    	margin: 10px 0;
+    }
+
+    .testi h3{
+		font-size: 19px;
+	}
+
+	/*--------------book taxi------------------*/
+	.book-taxi{
+		margin-top: 1rem;
+		padding: 0 3%;
+	}
+
+	.taxi{
+		padding: 2rem 0;
+		margin: 2.5rem 0 4rem 0;
+	}
+	
+	.taxi p{
+    	margin: 1.2rem 0;
+    	font-size: 15px;
+        text-align: justify;
+        width: 100%;
+    }
+    
+    .playstore{
+    	margin-top: 1rem;
+    	text-align: center;
+    }
+    
+    .playstore img{
+    	width: 21%;
+    }
+
+    .taxi-mob{
+    	margin-left: 15%;
+    }
+
+	.popular-box{
+	    justify-content: start;
+	}
+
+	/*----------modify search-----------*/
+	.modify h3{
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	.modify a{
+		font-size: 16px;
+	}
+
+	/*--------------------modal------------------*/
+	.modal-body.sign-body{
+		margin: 0.5rem;
+	}
+
+	.sign-img img{
+		width: 80%;
+	}
+
+	.sign-body h2{
+		font-size: 25px;
+		margin: 15px 0;
+	}
+
+	.sign-in{
+		text-align: center;
+	}
+
+	.sign-in label{
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	.sign-in input{
+		width: 80%;
+	}
+
+	.sign-sub input[type="submit"]{
+		width: 65%;
+	}
+
+
+}
+
+@media (max-width: 768px){
+	main{
+		margin: 0 0;
+	}
+
+	h1{
+		font-size: 23px!important;
+	}
+
+	 h2{
+		font-size: 18px!important;
+	} 
+
+	.hero h2{
+		text-align: center!important;
+		margin-top: 8px;
+	}
+
+	/*date and time------------*/
+	.ui-widget.ui-widget-content{
+		margin-bottom: 70px;
+	}
+
+	.mdtp__clock_holder{
+		margin-bottom: 50px;
+	}
+
+	/*-----------form--------------*/
+
+	.trip-form{
+		padding: 8px 7px;
+	}
+
+    .tab button {
+      	padding: 9px 12px;
+      	font-size: 14px;
+      	margin: 0 7px;
+    }
+
+    .input-container i{
+		margin-left: 15px;
+		margin-top: 18px;
+		font-size: 15px;
+	}
+
+	.input-field[type="text"]{
+		font-size: 15px;
+	}
+
+    .input-field{
+		padding: 8px 0;
+	}
+
+	.add_field_button i, .remove_field i{
+		font-size: 15px;
+		padding: 12px;
+		margin: 0;
+	}
+
+	.input-field.p-field{
+		width: 89%;
+	}
+
+	.date_time .input-container{
+		width: 100%;
+	}
+
+	.date_time .input-container{
+		margin-top: 3px;
+	}
+
+	.input-field[type="date"]{
+		font-size: 15px;
+	}
+
+	.input-field[type="time"]{
+		font-size: 15px;
+	}
+
+	.input-field[type="submit"]{
+		font-size: 15px;
+		width: 65%;
+	}
+
+
+/*-------------------oel carousel item------------*/
+	.offer-box .owl-carousel .owl-nav button.owl-next{
+		display: none!important;
+	}
+
+	.offer-box .owl-carousel .owl-nav button.owl-prev{
+		display: none!important;
+	}
+
+	.offer-box h1{
+		margin: 2.5rem 0 1rem 0;
+	}
+
+	.item-box .item-text h2{
+		font-size: 15px;
+	}
+
+	.item-box .item-text p{
+		font-size: 13px;
+	}
+
+	.item-box .item-text h3{
+		font-size: 12px;
+		margin: 5px 0;
+	}
+
+	.item p{
+		font-size: 14px;
+	}
+
+	/*------about section--------*/
+	.about-section{
+		padding: 10% 5%;
+	}
+
+	.about-section p{
+		font-size: 15px;
+		line-height: 1.6;
+		text-align: justify;
+	}
+
+	.about-btn a{
+		font-size: 15px;
+	}
+
+	.about-btn a::after{
+		width: 80px;
+	}
+
+	.owl-box .item{
+		height: 27vh;
+	}
+
+	/*-----------services-section-------------*/
+	.service p{
+		font-size: 15px;
+	}
+
+	.services .owl-carousel .owl-nav button.owl-next{
+		transform: translate(10px,-100px);
+	}
+
+	.services .owl-carousel .owl-nav button.owl-prev{
+		transform: translate(-25px,-100px);
+	}
+
+	/*------------book-taxi app---------------*/
+	.book-taxi{
+		padding: 0 5%;
+		margin-bottom: -80px;
+	}
+
+	.taxi{
+		margin: 2rem 0 2rem 0;
+	}
+	
+
+	.taxi-mob{
+		position: inherit;
+		z-index: -9;
+		text-align: center;
+	}
+
+	.taxi-mob img{
+		width: 49%;
+	}
+
+	.taxi-mob .img-mob{
+		transform: translate(-60px,50px);
+	}
+
+	.foot-box h2{
+	    font-size: 16px;
+	}
+
+	.foot-box ul li a{
+	    font-size: 14px;
+	}
+
+	.social li a i{
+	    font-size: 20px;
+	}
+	
+	.footer{
+        padding: 2% 1%;
+    }
+
+}
+
+@media(max-width: 640px){
+
+	.small-50{
+		width: 50%!important;
+	}
+
+}
+

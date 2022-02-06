@@ -1,0 +1,754 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	
+}
+
+p{
+	margin: 0;
+}
+
+a{
+	text-decoration: none!important;
+}
+
+main{
+	margin: 0 0;
+}
+
+h1{
+	font-size: 35px;
+	color: #000;
+	text-align: center;
+	padding: 0;
+	font-weight: 500;
+}
+
+/*-----------------------header------------=---------*/
+
+.navbar{
+	padding: 5px;
+}
+
+.navbar-brand img{
+	width: 90px;
+}
+
+.nav-item{
+	margin: 0;
+}
+
+.nav-link{
+	margin: 0;
+	font-size: 18px;
+	color: #000!important;
+	font-weight: 500;
+}
+
+.nav-link:hover{
+	color: #ffbe00!important;
+}
+
+.nav_1{
+	margin: 0 20px;
+}
+
+.form-inline img{
+	width: 20px;
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+
+.form-inline p{
+	color: #000;
+	font-size: 17px;
+	border: 1px solid #ffbe00;
+	padding: 6px 20px 6px 10px;
+	letter-spacing: 1px;
+	margin: 0;
+	background-color: #fff;
+	border-right: none;
+}
+
+.nav-sign a{
+	color: #ffbe00;
+	font-size: 17px;
+	border: 1px solid #000;
+	padding: 6px 20px;
+	letter-spacing: 1px;
+	margin: 0;
+	background-color: #000;
+	border-radius: 0px;
+	outline: none;
+}
+
+.nav-sign a:hover{
+	color: #000;
+	background-color: #ffbe00;
+	transition: ease 0.5s;
+	outline: none;
+	border: 1px solid #ffbe00!important;
+	outline: none;
+}
+
+/*----------------------section first-------------------------*/
+#first{
+	background-color: #ffbe00;
+	padding: 2rem 0;
+}
+
+.hero h1{
+	color: #000;
+	text-align: center;
+	padding: 0;
+	margin: 5px 0 0 0;
+}
+
+.hero h2{
+	font-size: 26px;
+	color: #000;
+	padding: 0;
+	margin: 10px 0 0px 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+.hero .trip-box{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+	margin: 20px 0;
+	width: 100%;
+}
+
+.trip{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.trip img{
+	width: 100%;
+}
+
+.trip-form{
+	width: 40%;
+	background-color: #fff;
+	padding: 15px 20px;
+	box-shadow: 10px 10px 20px #4d4d4d;
+	z-index: 1;
+}
+
+.trip-one{
+	overflow: hidden;
+	height: 250px;
+	margin-top: 100px;
+	margin-right: -80px;
+}
+
+.trip-two{
+	overflow: hidden;
+	height: 250px;
+	margin-top: 130px;
+	margin-left: -100px;
+}
+
+/*--------------tab- trip-form----------------*/
+.tab {
+  	overflow: hidden;
+  	text-align: center;
+  	margin: 7px 0;
+}
+
+.tab button {
+  	border: none;
+  	outline: none;
+  	cursor: pointer;
+  	padding: 10px 25px;
+  	transition: 0.3s;
+  	font-size: 15px;
+  	text-align: center;
+  	margin: 0 -2px;
+  	background-color: #fff;
+  	color: #000;
+  	letter-spacing: 1px;
+  	font-weight: 500;
+}
+
+.tab button:click {
+  	background-color: #000;
+  	color: #ffbe00;
+}
+
+.tab button.active {
+  	background-color: #000;
+  	color: #ffbe00;
+}
+
+.tabcontent {
+  	display: none;
+  	padding: 8px 0;
+  	border-top: none;
+  	width: 100%;
+}
+
+.input-container {
+  	display: flex;
+  	flex-direction: row;
+  	width: 100%;
+}
+
+.input-container i{
+	color: #ffbe00;
+	padding: 0px 0;
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.input-field{
+	width: 100%;
+	padding: 12px 0;
+	color: #000;
+	border: none;
+	margin: 5px 0;
+}
+
+.input-field.p-field{
+	width: 90%;
+}
+
+.input-field[type="text"]{
+	font-size: 16px;
+	background-color: #f2f2f2;
+	padding-left: 40px;
+	color: #404040;
+	outline: none;
+}
+
+.input-field::placeholder{
+	color: #404040;
+	padding-left: 0px;
+}
+
+.add_field_button{
+	border: none;
+	padding: 0px;
+	margin: 0px 0 0 0;
+	float: right;
+}
+
+.add_field_button i, .remove_field i{
+	font-size: 18px;
+	background-color: #000;
+	color: #fff;
+	padding: 15px;
+	margin: 0;
+}
+
+.remove_field{
+	margin-top: 5px;
+	width: 0%;
+}
+
+.date_time{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.date_time .input-container{
+	width: 49%;
+	margin-top: 5px;
+}
+
+.input-field[type="date"]{
+	font-size: 16px;
+	background-color: #f2f2f2;
+	padding-left: -100px;
+	color: #404040;
+	outline: none;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.input-field[type="time"]{
+	font-size: 16px;
+	background-color: #f2f2f2;
+	padding-left: 0px;
+	color: #404040;
+	outline: none;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.submit{
+	margin-top: 8px;
+}
+
+.input-field[type="submit"]{
+	font-size: 16px;
+	background-color: #000;
+	padding-left: 0px;
+	color: #ffbe00;
+	outline: none;
+	width: 65%;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.input-field[type="submit"]:hover{
+	background-color: #ffbe00;
+	color: #000;
+	transition: ease 0.5s;
+}
+
+/*---------------------offer section--------------------*/
+.offer-box{
+	margin: 0 5%;
+}
+
+.offer-box h1{
+	margin: 3rem 0 2rem 0;
+}
+
+.owl-box .item{
+	background-color: #fff;
+	height: 27vh;
+	padding: 3px;
+	margin: 0 5px;
+}
+
+.owl-theme .owl-dots{
+	display: none;
+	opacity: 0;
+}
+
+.owl-theme .owl-nav{
+	font-size: 50px;
+	padding: 0px;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+	color: #666666!important;
+	padding: 0;
+	margin-bottom: 0px;
+	width: 0;
+	height: 0;
+	outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+	transform: translate(28px,-140px);
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+	transform: translate(-40px,-140px);
+}
+
+.owl-box .item-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+.item-box .img{
+	margin-top: 30px;
+}
+
+.item-box img{
+	width: 100%;
+}
+
+.item-box .item-text{
+	margin: 20px 5px 3px 1px;
+}
+
+.item-box .item-text h2{
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	text-align: right;
+	color: #000;
+	font-weight: 500;
+}
+
+.item-box .item-text p{
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	text-align: right;
+	color: #000;
+}
+
+.item-box .item-text h3{
+	padding: 5px 10px;
+	margin: 10px 0;
+	font-size: 15px;
+	text-align: center;
+	color: #ffbe00;
+	background-color: #000;
+}
+
+.item p{
+	font-size: 15px;
+	color: #4d4d4d;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+/*--------------------second section- about--------------*/
+.about-section{
+	margin: 0rem 0;
+	padding: 5% 15%;
+}
+
+.about-section h1{
+	text-align: center;
+}
+
+.about-section p{
+	font-size: 20px;
+	padding: 1% 0;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.8;
+	color: #000;
+}
+
+.about-btn{
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.about-btn a{
+	font-size: 22px;
+	color: #000;
+	letter-spacing: 1px;
+}
+
+.about-btn a::after{
+	content: '';
+	display: block;
+	background: #000;
+	height: 1px;
+	width: 110px;
+	margin: 4px auto;
+}
+
+/*------------three section services---------------*/
+.services{
+	padding: 6% 10%;
+	background-color: #ffbe00;
+}
+
+.service{
+	margin: 15px 5px;
+	padding: 10px;
+}
+
+.service h2{
+	text-align: center;
+	font-size: 25px;
+	color: #000;
+}
+
+.service p{
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+	margin-top: 1rem;
+}
+
+.services .owl-carousel .owl-nav button.owl-next{
+	transform: translate(28px,-120px);
+}
+
+.services .owl-carousel .owl-nav button.owl-prev{
+	transform: translate(-40px,-120px);
+}
+
+/*------------------four section testimonial------------*/
+.testimonial{
+	margin: 0;
+	padding: 5% 6%;
+	background-color: #fafafa;
+}
+
+.testimonial h1{
+	margin-bottom: 2rem;
+}
+
+.testi{
+	margin: 10px 5px;
+	padding: 8px;
+}
+
+.testi i{
+	font-size: 25px;
+	color: #ffbe00;
+}
+
+.testi p{
+	font-size: 16px;
+	color: #808080;
+	margin: 20px 0;
+	line-height: 1.8;
+}
+
+.testi h3{
+	font-size: 18px;
+	color: #4d4d4d;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+
+.testimonial .owl-carousel .owl-nav button.owl-next,
+.testimonial .owl-carousel .owl-nav button.owl-prev,
+.testimonial .owl-carousel button.owl-dot{
+	display: none;
+}
+
+
+/*-----------------------five section booking taxi------------*/
+.book-taxi{
+	margin-top: 5rem;
+	padding: 0 8%;
+	margin-bottom: 0px;
+}
+
+.taxi{
+	padding: 3rem 0;
+	margin: 2rem 0 4rem 0;
+}
+
+.taxi h1{
+	text-align: left;
+}
+
+.taxi p{
+	margin: 1.5rem 0;
+	font-size: 18px;
+	color: #565656;
+	width: 80%;
+}
+
+.playstore{
+	margin-top: 2rem;
+	margin-left: 0px;
+}
+
+.playstore img{
+	margin-right: 20px;
+	margin-top: 10px;
+	width: 25%;
+}
+
+.taxi-mob{
+	position: absolute;
+	z-index: -9;
+}
+
+.taxi-mob img{
+	width: 49%;
+	height:auto;
+}
+
+.taxi-mob .img-mob{
+	transform: translate(-110px,90px);
+	overflow: hidden;
+}
+
+/*----------------section six popular--------------*/
+#six{
+	overflow: hidden;
+}
+
+.popular{
+    padding: 3rem 3%;
+    background-color: #333333;
+    width: 100%;
+}
+
+.popular h1{
+    color: #ffbe00;
+    margin-bottom: 15px;
+}
+
+.popular-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.pop-box{
+    padding: 0px;
+    margin: 10px;
+}
+
+.pop-box ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+.pop-box ul li a{
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.8;
+    
+}
+
+/*---------------------------footer---------------------*/
+footer{
+	overflow: hidden;
+	width: 100%;
+}
+
+.footer{
+    background-color: #262626;
+    padding: 2% 5%;
+}
+
+footer .foot-box{
+    padding: 15px 20px;
+}
+
+.foot-box h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+  	font-weight: 400;
+}
+
+.foot-box ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+.foot-box ul li a{
+    color: #f1f1f1;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1.7;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.social li a i{
+    font-size: 28px;
+    color: #fff;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+.copy{
+    background-color: #1a1a1a;
+    text-align: center;
+    margin: 0;
+}
+
+.copy p{
+    margin: 0px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #ffbf00;
+}
+
+.copy p a{
+	color: #ffbe00;
+}
+
+
+/*---------------------------Modal-page-----------------*/
+.modal-body.sign-body{
+	margin: 2rem;
+}
+
+.sign-img{
+	text-align: center;
+}
+
+.sign-img img{
+	width: 50%;
+}
+
+.sign-body h2{
+	font-size: 28px;
+	color: #000;
+	font-weight: 600;
+	text-align: center;
+	padding: 0;
+	margin: 15px 0;
+}
+
+.sign-in{
+	text-align: center;
+}
+
+.sign-in label{
+	font-size: 17px;
+	color: #404040;
+	font-weight: 500;
+}
+
+.sign-in input{
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	width: 50%;
+	padding: 10px 15px;
+	outline: none;
+	margin: 10px 0;
+}
+
+.sign-in input[type="text"]{
+	font-size: 16px;
+	color: #000;
+}
+.sign-sub{
+	text-align: center;
+	margin: 10px 0 30px 0;
+}
+
+.sign-sub a{
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+	border-bottom: 1px solid #000;
+}
+
+.sign-sub input[type="submit"]{
+	text-align: center;
+	font-size: 16px;
+	background-color: #000;
+	color: #fff;
+	padding: 8px 0px;
+	width: 35%;
+	border-radius: 3px;
+	outline: none;
+}

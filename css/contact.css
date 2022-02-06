@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	margin: 0;
+}
+
+/*---------------contact page-------------*/
+#contact{
+	background-color: #ffbe00;
+	padding: 3% 7%;
+}
+
+.contact p{
+	margin-top: 1rem;
+	text-align: center;
+	font-size: 18px;
+	color: #000;
+	letter-spacing: 1px;
+	line-height: 1.8;
+}
+
+/*----------------cntact-us----------------*/
+#contact-us{
+	padding: 5% 10%;
+	margin: 0;
+}
+
+.contact-us{
+	display: flex;
+	flex-direction: row;
+	margin: 6px 0;
+	padding: 0;
+}
+
+.contact-us .cont{
+	margin: 0 8px;
+}
+
+.cont i{
+	font-size: 21px;
+	color: #000;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	border:  1px solid #ffbe00;
+	background-color: #ffbe00;
+}
+
+.cont h4{
+	margin: 0;
+	font-size: 18px;
+	color: #000;
+}
+
+.cont p{
+	font-size: 16px;
+	color: #333333;
+}
+
+/*-----------------------query--------------------*/
+.query{
+	background-color: #000;
+	margin: 0 4rem 6rem 4rem;
+	padding: 7% 20% 5% 20%;
+}
+
+.query h1{
+	color: #fff;
+}
+
+.query-form{
+	padding: 6% 0;
+}
+
+.query1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.query1 input{
+	width: 49%;
+}
+
+.query-form input[type="text"]{
+	background-color: #fff;
+	padding: 8px 20px;
+}
+
+.query-form input::Placeholder{
+	color: #000;
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	opacity: 0.5;
+}
+
+.query-form textarea{
+	background-color: #fff;
+	padding: 8px 20px;
+	height: 18vh;
+	outline: none;
+}
+
+.query-form textarea::Placeholder{
+	color: #000;
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	opacity: 0.5;
+}
+
+.query-submit{
+	text-align: center;
+}
+
+.query-submit input[type="submit"]{
+	text-align: center;
+	border: 1px solid #ffbe00;
+	background-color: #ffbe00;
+	color: #262626;
+	width: 35%;
+	padding: 7px 0;
+}
+
+
+
+
+@media (max-width: 991px){
+
+	#contact{
+		padding: 5% 2%;
+	}
+
+	.contact p{
+		font-size: 14px;
+		text-align: justify;
+		margin-top: 0.6rem;
+	}
+
+	/*----------contact-us-------*/
+	#contact-us{
+		padding: 5% 2%;
+		width: 95%;
+	}
+
+	.contact-us .cont{
+		margin: 0 5px;
+	}
+
+	.cont i{
+		font-size: 18px;
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
+	}
+
+	.cont h4{
+		font-size: 16px;
+	}
+
+	.cont p{
+		font-size: 13px;
+	}
+
+	/*-------------------query----------*/
+	.query{
+		margin: 0 2rem 3rem 2rem;
+		padding: 5% 10% 5% 10%;
+	}
+
+	.query1 input{
+		width: 100%;
+	}
+
+
+}
+
+
+@media (max-width: 768px){
+
+	.query{
+		margin: 0 0rem 3rem 0rem!important;
+		padding: 5% 2% 5% 2% !important;
+	}
+
+}
